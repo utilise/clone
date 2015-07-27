@@ -1,6 +1,6 @@
-var parse = require('parse')
-  , str = require('str')
-  , is = require('is')
+var parse = require('utilise.parse')
+  , str = require('utilise.str')
+  , is = require('utilise.is')
 
 module.exports = function clone(d) {
   return !is.fn(d) 
