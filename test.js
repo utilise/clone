@@ -22,5 +22,9 @@ describe('clone', function() {
     expect(a.foo).to.be.eql('bar')
     expect(b.foo).to.be.eql('bar')
   })
+  
+  it('should ignore strings', function() {
+    expect(clone('foo')).to.be.eql('foo')
+  })
 
 })
